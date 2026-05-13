@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brainrot Market Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <div class="container">
+    <h1>Brainrot Market Checker</h1>
+    <p class="subtitle">
+      Scan Eldorado.gg listings and calculate average prices instantly.
+    </p>
+
+    <div class="card">
+      <input id="brainrot" placeholder="Brainrot name" />
+
+      <input id="mutation" placeholder="Mutation (optional)" />
+
+      <select id="currency">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>GBP</option>
+        <option>CAD</option>
+        <option>AUD</option>
+        <option>JPY</option>
+      </select>
+
+      <button onclick="checkPrices()">Check Average</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
